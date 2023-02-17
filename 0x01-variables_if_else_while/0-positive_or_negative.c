@@ -5,7 +5,7 @@
 /*
  * main - prints if the number is positive, negative  or 0
  *
- * descripion - if/else statement declares whether a number is positive, negative or zero
+ * description - if/else declares number is positive, negative or zero
  *
  * Return: Always 0
  */
