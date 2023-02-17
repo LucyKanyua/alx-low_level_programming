@@ -5,7 +5,7 @@
 /*
  * main - prints if the number is positive, negative  or 0
  *
- * description: 'the program's description'
+ * description: 'if/else declares number positive, negative or 0'
  *
  * Return: Always 0
  */
