@@ -8,6 +8,7 @@ int main(void)
 	char ch;
 
 	for (ch = 'a'; ch <= 'z'; ch++)
+
 	for (ch = 'A'; low <= 'Z'; ch++)
 	putchar(ch);
 	putchar('\n');
