@@ -7,6 +7,7 @@
  * in the 0x04-more_functions_nested_loops project
  */
 
+int_putchar(int c)
 int _isupper(int c)
 int _isdigit(int c)
 int mul(int a, int b)
