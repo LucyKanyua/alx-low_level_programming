@@ -3,7 +3,7 @@
 #include <time.h>
 /**
  * main - generates random valid passwords for the program 101-crackme
- * Return: always 0
+ * Return: Always 0
  */
 int main(void)
 {
@@ -15,7 +15,7 @@ int main(void)
 	while (sum < 2772)
 	{
 		password[index] = 33 + rand() % 94;
-		sum += passwod[index++];
+		sum += password[index++];
 	}
 	password[index] = '\0';
 	if (sum != 2772)
