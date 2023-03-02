@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+
 /**
  * file name: main.h
  * description: header file containing all the prototypes of the functions
