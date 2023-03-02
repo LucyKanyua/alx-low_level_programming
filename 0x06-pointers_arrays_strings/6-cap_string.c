@@ -4,9 +4,10 @@
  *	    null byte, to the end of the string pointed to by @dest
  * @dest: a pointer to the string to be concatenated upon
  * @src: the source string to be appended to @dest
+ * @index: an integer
  * Return: a pointer to the destination string @dest
  */
-char *_strcat(char *dest, char *src);
+char *_strcat(char *dest, char *src, int index);
 {
 	int index = 0, dest_len = 0;
 
