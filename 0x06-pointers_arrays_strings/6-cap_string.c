@@ -1,19 +1,32 @@
 #include "main.h"
 /**
- * _strcat - concatenates the string pointed to by @src including the terminat
- *	    null byte, to the end of the string pointed to by @dest
- * @dest: a pointer to the string to be concatenated upon
- * @src: the source string to be appended to @dest
- * @index: an integer
- * Return: a pointer to the destination string @dest
+ * cap_string - capitalizes all words of a string
+ * @str: the string to be capitalized
+ * Return: a pointer to the changed string
  */
-char *_strcat(char *dest, char *src, int index);
+char *cap_string(char *)
 {
-	int index = 0, dest_len = 0;
-
-	while (dest[index++])
-		dest_len++;
-	for (index = 0; src[index]; index++)
-		dest[dest_len++] = src[index];
-	return (dest);
+	int index = 0;
+	while (str[index])
+	{
+		while (!(str[index] >= 'a' && str[index] <= 'z'))
+			index++;
+		if (str[index - 1] == ''||
+				str[index - 1] == '\t'||
+				str[index - 1] == '\n'||
+				str[index - 1] == ','||
+				str[index - 1] == ';'||
+				str[index - 1] == '.'||
+				str[index - 1] == '!'||
+				str[index - 1] == '?'||
+				str[index - 1] == '"'||
+				str[index - 1] == '('||
+				str[index - 1] == ')'||
+				str[index - 1] == '{'||
+				str[index - 1] == '}'||
+				index == 0)
+			str[index] -=32;
+		index++;
+	}
+	return (str);
 }
